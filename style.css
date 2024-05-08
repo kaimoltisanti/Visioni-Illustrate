@@ -4,10 +4,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #111;
     font-weight: 500;
-    font-optical-sizing: auto;
-    font-style: normal;
     background-color: #fff;
-    margin: 0;
     margin: auto; 
     scroll-behavior: smooth;
     cursor:default;
@@ -19,23 +16,31 @@ main {
     max-width: 1100px;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, ul, li, p, a {
     margin: 0;
     padding: 0;
 }
 
+a, nav , nav ul, ul li {
+    text-decoration: none;
+    list-style: none;
+}
 p {
-    font-size: 18px;
+    font-size: 1.3rem;
     line-height: 1.3rem;
     margin-bottom: 1.3rem;
 }
 
-.grid a:hover, nav :hover, nav ul:hover, ul li:hover {
+.grid a:hover, .grid nav :hover, ul li:hover, a :hover, nav ul :hover, footer ul li :hover {
     text-decoration: underline;
     color: #306471;
 }
 
-.background nav ul li:hover {
+.background nav ul li:hover, .background a :hover {
     text-decoration: underline;
     color: #d9d9d9;
 }
@@ -44,31 +49,15 @@ p {
     color: #d9d9d9;
 }
 
-img {
-    max-width: 100%;
-}
-
 hr {
     margin: 0;
 }
 
-.short-hr {
-    max-width: 1100px;
-    margin: auto;
-}
-
-header nav a {
-    color: #111;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 .info {
-    padding-block-end: 10%;
+    padding: 0% 0% 10%;
     color: #fff;
     max-width: 1100px;
     margin:auto;
-    
 }
 
 header {
@@ -79,6 +68,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
 .sito a {
@@ -90,7 +80,7 @@ header {
     line-height: 150%
 }
 
-.background header nav a {
+.background header nav a, .background a {
     color: #fff;
 }
 .background {
@@ -104,9 +94,9 @@ header {
 .info h1 {
     font-family: "Cuprum", sans-serif;
     font-size: 8rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 90%;
+    margin-bottom: 0.9rem;
     text-transform: uppercase;
     max-width: 60%;
     padding-top: 4rem;
@@ -116,30 +106,27 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 90%;
-    padding-top: 1rem;
 }
 
 .info h3 {
     font-family: Cuprum;
     font-size: 3rem;
+    line-height: 90%;
+    margin-bottom: 0.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 90%;
     text-transform: uppercase;
     padding-top: 4rem;
 }
 
 .info h4 {
-    font-family: montserrat;
     font-size: 1rem;
     font-weight: 400;
     line-height: 90%;
     text-transform: uppercase;
-    padding-top: 0.5rem;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
     gap: 100px;  
 }
@@ -148,26 +135,40 @@ header nav ul {
 .par {
     padding: 10% 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    gap: 160px;
+    grid-template-columns: 25% 75%;
+    gap: 10%;
 }
 
 .par h1 {
     font-family: Cuprum;
-    font-size: 64px;
+    font-size: 2rem;
     line-height: 90%;
     color: #306471;
     text-transform: uppercase;
+    text-wrap: wrap;
 }
 
-.h1 {
-    max-width: 260px;
-    word-wrap: break-word;
-    object-fit: cover;
+.par-grande {
+    padding: 10% 0 0 0;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 10%;
+    object-fit: contain;
 }
+.par-grande h1 {
+    font-family: Cuprum;
+    font-size: 9vw;
+    line-height: 90%;
+    color: #306471;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    
+}
+
+
 
 .grid {
-    padding: 10% 0 50% 0%;
+    padding: 10% 0 20% 0%;
     max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -203,13 +204,14 @@ header nav ul {
     color: #111;
 }
 
+
 footer {
     display: flex;
     max-width: 1100px;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 1% 10%;
 }
 
 footer nav a, ul a {
@@ -228,4 +230,19 @@ footer ul {
 footer nav {
     max-width: 260px;
 }
+
+.nav-artisti ul {
+    display: flex;
+    text-transform: uppercase;
+    gap: 20px;
+    padding: 0% 0 10% 0%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.nav-artisti ul a {
+   color: grey; 
+   font-size: 16px;
+}
+
 

@@ -85,7 +85,7 @@ header {
 }
 .background {
     background-color: #306471;
-    background-image: url(/img/home\ background.jpg);
+    background-image: url(img/home-background.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;

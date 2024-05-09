@@ -1,23 +1,59 @@
 
-
-body {
-    font-family: "Montserrat", sans-serif;
-    color: #111;
-    font-weight: 500;
-    background-color: #fff;
-    margin: auto; 
-    scroll-behavior: smooth;
-    cursor:default;
+html {
+    font-size: 10px;
+    font-family: Montserrat;
 }
 
-main {
+
+body {
+    margin: 0;
+    color: #111;
+}
+
+header {
+    max-width: 110rem;
     margin: auto;
-    padding: 0 10%;
-    max-width: 1100px;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+header nav ul {
+    gap: 5vw;
+}
+main {
+    max-width: 110rem;
+    margin: auto;
+    padding: 4rem;
+}
+
+footer {
+    max-width: 110rem;
+    margin: auto;
+    padding:4rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-weight: 600;
+}
+
+footer nav {
+    max-width: 15rem;
+}
+
+footer ul {
+    gap: 5vw;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+}
+
+hr {
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, ul, li, p, a {
@@ -25,224 +61,210 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a {
     padding: 0;
 }
 
-a, nav , nav ul, ul li {
+a {
+    font-size: 1.2em;
     text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #306471;
+}
+
+.home-b a:hover, .home-m a:hover {
+    color: #d9d9d9;
+}
+
+.home :hover, footer nav :hover {
+    text-decoration: none;
+}
+
+li {
     list-style: none;
 }
-p {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-    margin-bottom: 1.3rem;
-}
 
-.grid a:hover, .grid nav :hover, ul li:hover, a :hover, nav ul :hover, footer ul li :hover {
-    text-decoration: underline;
-    color: #306471;
-}
-
-.background nav ul li:hover, .background a :hover {
-    text-decoration: underline;
-    color: #d9d9d9;
-}
-
-.background nav a:hover {
-    color: #d9d9d9;
-}
-
-hr {
-    margin: 0;
-}
-
-.info {
-    padding: 0% 0% 10%;
-    color: #fff;
-    max-width: 1100px;
-    margin:auto;
-}
-
-header {
-    max-width: 1100px;
-    padding: 1% 10%;
-    padding-block-end: 0%;
-    margin: auto;
+ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
 }
 
-.sito a {
+h1 {
+    font-family: Cuprum;
     color: #306471;
-    font-family: "Cuprum", sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%
+    font-size: 3.2rem;
+    line-height: 90%;
+    margin: 1rem 0 2.9rem;
+    text-transform: uppercase;
 }
 
-.background header nav a, .background a {
-    color: #fff;
+h2 {
+    font-family: Cuprum;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    margin-top: 4.8rem;
 }
-.background {
+
+h4 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+p  {
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 1.8rem;
+}
+
+.home-b {
     background-color: #306471;
     background-image: url(img/home-background.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    color: #f1f1f1;
 }
 
-.info h1 {
+.home-a {
+    background-color: #FCEEDA;
+    background-image: url(img/icinori/icinori/AP_Icinori_MOXIE_1_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: top right;
+}
+
+.home-m {
+    background-color: #004248;
+    background-image: url(img/sanna-mander/sanna-mander/AP_Sanna_Mander_daydreaming_06_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    color: #f1f1f1;
+}
+
+.home-i {
+    background-color: #efeae8;
+    background-image: url(img/adrian-johnson/adrian-johnson/AP_Adrian_Johnson_URSA_MINOR_URSA_MAJOR_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: bottom right;
+}
+
+.home-b h1, .home-m h1 {
+    color: #f1f1f1;
+    max-width: 4.8em;
+    font-size: 10em;
+    margin: 3rem 0 0.5rem;
+}
+
+.home-a h1,.home-i h1 {
+    color: #111;
+    max-width: 4.8em;
+    font-size: 10em;
+    margin: 3rem 0 0.5rem;
+}
+
+
+.info {
+    max-width: 110rem;
+    margin: auto;
+    padding: 4rem;
+}
+
+.home {
     font-family: "Cuprum", sans-serif;
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 90%;
-    margin-bottom: 0.9rem;
-    text-transform: uppercase;
-    max-width: 60%;
-    padding-top: 4rem;
+    font-weight: 600;
+    font-size: 2.4em;
+    line-height: 100%;
 }
 
-.info h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 90%;
-}
 
-.info h3 {
-    font-family: Cuprum;
-    font-size: 3rem;
-    line-height: 90%;
-    margin-bottom: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-top: 4rem;
-}
 
-.info h4 {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 90%;
-    text-transform: uppercase;
-}
 
-header nav ul {
-    display: flex;
-    gap: 100px;  
-}
 
+.container h4 {
+    font-weight: 500;
+}
 
 .par {
-    padding: 10% 0 0 0;
+    max-width: 110rem;
     display: grid;
-    grid-template-columns: 25% 75%;
-    gap: 10%;
+    grid-template-columns: 1fr 2fr;
+    gap: 4em;
+    margin: 6.4rem 0 6.4rem;
 }
 
-.par h1 {
-    font-family: Cuprum;
-    font-size: 2rem;
-    line-height: 90%;
-    color: #306471;
-    text-transform: uppercase;
-    text-wrap: wrap;
+.grid {
+    padding: 10% 0 20% 0%;  
+    max-width: 110rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
-.par-grande {
-    padding: 10% 0 0 0;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    gap: 10%;
-    object-fit: contain;
+.square {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 10%
 }
-.par-grande h1 {
-    font-family: Cuprum;
-    font-size: 9vw;
-    line-height: 90%;
-    color: #306471;
-    text-transform: uppercase;
-    text-wrap: wrap;
+
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+}
+
+.grid a {
+  font-family: "Cuprum", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+@media (max-width: 800px){
+    html {font-size: 8px;}
+    nav ul{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2rem;
+        align-items: center;
+        align-self: center;
+        justify-items: center;
+        
+    }
+    
+}
+
+@media (max-width: 400px){
+    html {font-size: 4px;}
+
+    .par {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
     
 }
 
 
 
-.grid {
-    padding: 10% 0 20% 0%;
-    max-width: 1100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2%;
-}
-
-.square {
-    background-color: #d9d9d9;
-    display: flex;
-    align-items: center;
-    padding: 10%
-}
-
-.square img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    align-items: center;
-    aspect-ratio: 1/1;
-}
 
 
 
-.grid a {
-    font-family: "Cuprum", sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 200%;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #111;
-}
 
 
-footer {
-    display: flex;
-    max-width: 1100px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 10%;
-}
 
-footer nav a, ul a {
-    color: #111;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
-footer ul {
-    list-style: none;
-    gap: 100px;
-    display: flex;
-}
 
-footer nav {
-    max-width: 260px;
-}
-
-.nav-artisti ul {
-    display: flex;
-    text-transform: uppercase;
-    gap: 20px;
-    padding: 0% 0 10% 0%;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.nav-artisti ul a {
-   color: grey; 
-   font-size: 16px;
-}
 
 
